@@ -8,7 +8,7 @@ using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    std::cout << "1. Strategy Pattern\n";
 	StrategyContainer strCon;
 	strCon.Display();
 

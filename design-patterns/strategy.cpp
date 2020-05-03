@@ -2,14 +2,15 @@
 #include "strategy.h"
 
 using namespace std;
+
 void StrategyImplA::Display(void)
 {
-	cout << "ImpleA" << endl;
+	cout << "ImpleA\n";
 }
 
 void StrategyImplB::Display(void)
 {
-	cout << "ImpleB" << endl;
+	cout << "ImpleB\n";
 }
 
 StrategyContainer::StrategyContainer()
@@ -25,7 +26,7 @@ void StrategyContainer::SetStrategy(class IStrategy *i)
 void StrategyContainer::Display(void)
 {
 	if (NULL == m_ifstr) {
-		cout << "No Impl" << endl;
+		cout << "No Impl\n";
 		return;
 	}
 	m_ifstr->Display();
