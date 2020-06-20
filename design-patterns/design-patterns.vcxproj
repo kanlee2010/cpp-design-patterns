@@ -151,11 +151,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="adaptor.cpp" />
     <ClCompile Include="design-patterns.cpp" />
     <ClCompile Include="strategy.cpp" />
+    <ClCompile Include="template_method.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="adaptor.h" />
     <ClInclude Include="strategy.h" />
+    <ClInclude Include="template_method.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

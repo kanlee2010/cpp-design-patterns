@@ -2,21 +2,18 @@
 //
 
 #include <iostream>
-#include "strategy.h"
 
 using namespace std;
 
+extern void strategy_client(void);
+extern void adaptor_client(void);
+extern void template_method_client(void);
+
 int main()
 {
-    std::cout << "1. Strategy Pattern\n";
-	StrategyContainer strCon;
-	strCon.Display();
-
-	strCon.SetStrategy(new StrategyImplA);
-	strCon.Display();
-
-	strCon.SetStrategy(new StrategyImplB);
-	strCon.Display();
+	strategy_client();
+	adaptor_client();
+	template_method_client();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

@@ -31,3 +31,16 @@ void StrategyContainer::Display(void)
 	}
 	m_ifstr->Display();
 }
+
+void strategy_client(void)
+{
+	std::cout << "Strategy Pattern\n";
+	StrategyContainer strCon;
+	strCon.Display();
+
+	strCon.SetStrategy(new StrategyImplA);
+	strCon.Display();
+
+	strCon.SetStrategy(new StrategyImplB);
+	strCon.Display();
+}
