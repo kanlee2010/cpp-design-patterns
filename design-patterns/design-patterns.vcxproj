@@ -151,13 +151,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="abstract_factory.cpp" />
     <ClCompile Include="adaptor.cpp" />
     <ClCompile Include="design-patterns.cpp" />
+    <ClCompile Include="factory_method.cpp" />
     <ClCompile Include="strategy.cpp" />
     <ClCompile Include="template_method.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="abstract_factory.h" />
     <ClInclude Include="adaptor.h" />
+    <ClInclude Include="factory_method.h" />
     <ClInclude Include="strategy.h" />
     <ClInclude Include="template_method.h" />
   </ItemGroup>

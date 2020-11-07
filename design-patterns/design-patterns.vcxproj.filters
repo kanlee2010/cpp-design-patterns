@@ -27,6 +27,12 @@
     <ClCompile Include="template_method.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="factory_method.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="abstract_factory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="strategy.h">
@@ -36,6 +42,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="template_method.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="factory_method.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="abstract_factory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -29,7 +29,7 @@ void LGMotor::moveMotor(Direction direction)
 
 void template_method_client(void)
 {
-	Door *door = new Door();
-	HyundaiMotor *hyundaiMotor = new HyundaiMotor(*door);
-	hyundaiMotor->move(Direction::UP); // 위로 올라가도록 엘리베이터 제어
+	Door door;
+	HyundaiMotor hyundaiMotor(door);
+	hyundaiMotor.move(Direction::UP); // 위로 올라가도록 엘리베이터 제어
 }
