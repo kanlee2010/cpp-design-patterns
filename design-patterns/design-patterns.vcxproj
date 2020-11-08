@@ -153,6 +153,7 @@
   <ItemGroup>
     <ClCompile Include="abstract_factory.cpp" />
     <ClCompile Include="adaptor.cpp" />
+    <ClCompile Include="builder.cpp" />
     <ClCompile Include="design-patterns.cpp" />
     <ClCompile Include="factory_method.cpp" />
     <ClCompile Include="strategy.cpp" />
@@ -161,6 +162,7 @@
   <ItemGroup>
     <ClInclude Include="abstract_factory.h" />
     <ClInclude Include="adaptor.h" />
+    <ClInclude Include="builder.h" />
     <ClInclude Include="factory_method.h" />
     <ClInclude Include="strategy.h" />
     <ClInclude Include="template_method.h" />

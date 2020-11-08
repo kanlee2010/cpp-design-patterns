@@ -3,18 +3,42 @@
 
 using namespace std;
 
-IProduct* Factory::create(ProductType prodtype)
+IProduct* IFactory::create(void)
 {
-	IProduct *iproduct = nullptr;
-	switch (prodtype) {
-	case TYPEA:
-		iproduct = new ProductA;
-		break;
-	case TYPEB:
-		iproduct = new ProductB;
-		break;
-	}
-	return iproduct;
+	prepareProduct();
+	IProduct *product = createProduct();
+	saveProductInfo();
+	return product;
+}
+
+void FactoryA::prepareProduct(void)
+{
+	std::cout << "FactoryA::prepareProduct\n";
+}
+
+void FactoryA::saveProductInfo(void)
+{
+	std::cout << "FactoryA::saveProductInfo\n";
+}
+
+IProduct* FactoryA::createProduct(void)
+{
+	return new ProductA;
+}
+
+void FactoryB::prepareProduct(void)
+{
+	std::cout << "FactoryB::prepareProduct\n";
+}
+
+void FactoryB::saveProductInfo(void)
+{
+	std::cout << "FactoryB::saveProductInfo\n";
+}
+
+IProduct* FactoryB::createProduct(void)
+{
+	return new ProductB;
 }
 
 void ProductA::Display(void)
@@ -29,12 +53,14 @@ void ProductB::Display(void)
 
 void factory_method_client(void)
 {
-	IProduct *iproduct;
-	Factory fac;
-	iproduct = fac.create(ProductType::TYPEA);
-	iproduct->Display();
-	delete iproduct;
-	iproduct = fac.create(ProductType::TYPEB);
-	iproduct->Display();
-	delete iproduct;
+	IProduct *product;
+	FactoryA facA;
+	product = facA.create();
+	product->Display();
+	delete product;
+
+	FactoryB facB;
+	product = facB.create();
+	product->Display();
+	delete product;
 }

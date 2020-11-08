@@ -1,7 +1,5 @@
 #pragma once
 
-enum ProductType {TYPEA, TYPEB};
-
 class IProduct
 {
 public:
@@ -18,8 +16,22 @@ public:
 	void Display(void);
 };
 
-class Factory {
+class IFactory {
 public:
-	Factory() {}
-	IProduct* create(ProductType prodtype);
+	IProduct* create(void);
+	virtual void prepareProduct(void) = 0;
+	virtual IProduct* createProduct(void) = 0;
+	virtual void saveProductInfo(void) = 0;
+};
+
+class FactoryA : public IFactory {
+	void prepareProduct(void);
+	IProduct* createProduct(void);
+	void saveProductInfo(void);
+};
+
+class FactoryB : public IFactory {
+	void prepareProduct(void);
+	IProduct* createProduct(void);
+	void saveProductInfo(void);
 };
