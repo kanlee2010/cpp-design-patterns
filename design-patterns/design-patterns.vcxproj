@@ -155,6 +155,7 @@
     <ClCompile Include="adaptor.cpp" />
     <ClCompile Include="bridge.cpp" />
     <ClCompile Include="builder.cpp" />
+    <ClCompile Include="composite.cpp" />
     <ClCompile Include="design-patterns.cpp" />
     <ClCompile Include="factory_method.cpp" />
     <ClCompile Include="strategy.cpp" />
@@ -165,6 +166,7 @@
     <ClInclude Include="adaptor.h" />
     <ClInclude Include="bridge.h" />
     <ClInclude Include="builder.h" />
+    <ClInclude Include="composite.h" />
     <ClInclude Include="factory_method.h" />
     <ClInclude Include="strategy.h" />
     <ClInclude Include="template_method.h" />
