@@ -10,6 +10,7 @@ extern void adaptor_client(void);
 extern void template_method_client(void);
 extern void factory_method_client(void);
 extern void builder_client(void);
+extern void abstract_factory_client(void);
 
 int main()
 {
@@ -18,6 +19,7 @@ int main()
 	template_method_client();
 	factory_method_client();
 	builder_client();
+	abstract_factory_client();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
