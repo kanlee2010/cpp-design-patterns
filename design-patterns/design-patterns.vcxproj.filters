@@ -42,6 +42,9 @@
     <ClCompile Include="composite.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="decorator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="strategy.h">
@@ -66,6 +69,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="composite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="decorator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
