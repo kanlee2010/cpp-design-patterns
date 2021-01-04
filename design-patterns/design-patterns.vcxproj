@@ -161,6 +161,7 @@
     <ClCompile Include="factory_method.cpp" />
     <ClCompile Include="strategy.cpp" />
     <ClCompile Include="template_method.cpp" />
+    <ClCompile Include="visitor.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="abstract_factory.h" />
@@ -172,6 +173,7 @@
     <ClInclude Include="factory_method.h" />
     <ClInclude Include="strategy.h" />
     <ClInclude Include="template_method.h" />
+    <ClInclude Include="visitor.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

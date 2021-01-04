@@ -14,6 +14,7 @@ extern void abstract_factory_client(void);
 extern void bridge_client(void);
 extern void composite_client(void);
 extern void decorator_client(void);
+extern void visitor_client(void);
 
 int main()
 {
@@ -26,6 +27,7 @@ int main()
 	bridge_client();
 	composite_client();
 	decorator_client();
+	visitor_client();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
