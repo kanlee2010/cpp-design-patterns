@@ -159,6 +159,7 @@
     <ClCompile Include="decorator.cpp" />
     <ClCompile Include="design-patterns.cpp" />
     <ClCompile Include="factory_method.cpp" />
+    <ClCompile Include="observer.cpp" />
     <ClCompile Include="strategy.cpp" />
     <ClCompile Include="template_method.cpp" />
     <ClCompile Include="visitor.cpp" />
@@ -171,6 +172,7 @@
     <ClInclude Include="composite.h" />
     <ClInclude Include="decorator.h" />
     <ClInclude Include="factory_method.h" />
+    <ClInclude Include="observer.h" />
     <ClInclude Include="strategy.h" />
     <ClInclude Include="template_method.h" />
     <ClInclude Include="visitor.h" />

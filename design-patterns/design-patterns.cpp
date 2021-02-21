@@ -15,6 +15,7 @@ extern void bridge_client(void);
 extern void composite_client(void);
 extern void decorator_client(void);
 extern void visitor_client(void);
+extern void observer_client(void);
 
 int main()
 {
@@ -28,6 +29,7 @@ int main()
 	composite_client();
 	decorator_client();
 	visitor_client();
+	observer_client();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

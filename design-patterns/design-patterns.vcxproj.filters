@@ -48,6 +48,9 @@
     <ClCompile Include="visitor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="observer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="strategy.h">
@@ -78,6 +81,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="visitor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="observer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
